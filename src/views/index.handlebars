@@ -1,0 +1,35 @@
+<div>
+  <div class="chat-container">
+    <div class="chat-header">
+      Ventana de Chat
+    </div>
+    <div class="chat-messages">
+      {{!-- {{#each messages}}
+        <div class="chat-message {{this.sender}}">
+          {{this.text}}
+        </div>
+      {{/each}} --}}
+      <ul class="chat-messages"></ul>
+    </div>
+    <form class="chat-input-container" id="chatForm">
+      <input
+        type="text"
+        class="chat-input"
+        id="chatInput"
+        name="message"
+        placeholder="Escribe un mensaje..."
+      />
+      <button type="submit" class="chat-send">Enviar</button>
+    </form>
+  </div>
+  {{! <form action="">
+    <input type="text" class="form-control" placeholder="Ingrese su mensaje" />
+    <button type="submit">Enviar</button>
+  </form> }}
+
+  {{! <h1>Todo Listo...</h1> }}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+<link rel="stylesheet" href="/css/style.css" />
